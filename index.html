@@ -1,13 +1,17 @@
 <!DOCTYPE>
 <html>
     <head>
-        <link href="style.css" type="text/css" rel="stylesheet"/>
-        <script src="imageCrop.js" type="text/javascript"></script>
+        <title> crop </title>
+        <link href="imgCropper.css" type="text/css" rel="stylesheet"/>
+        <script src="imgCropper.js" type="text/javascript"></script>
     </head>
     <body>
-        <div id="cropArea"><img src="imagen.jpg" /><div></div></div>
+         Da Click en la Imagen!
+        <div id="cropArea">
+            <img  src="Res/image.jpg" alt="imagen error"/>
+            <div class="cropper"></div>
+        </div>       
     </body>
-   
     <script type= "text/javascript">
         var crop = new imageCrop({container:"cropArea"});
         crop.init();
